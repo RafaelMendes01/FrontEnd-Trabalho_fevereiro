@@ -3,11 +3,29 @@
     margin: 0px;
     box-sizing: border-box;
 }
+@keyframes bordas {
+    0%{border-color:cyan;color:cyan;}
+    25%{border-color:chartreuse;color:chartreuse;}
+    50%{border-color:gold;color:gold;}
+    75%{border-color:crimson;color:crimson;}
+    100%{border-color:purple;color:purple;}
+}
+@keyframes fundo{
+    0%{background-color:cyan;}
+    25%{background-color:chartreuse;}
+    50%{background-color:gold;}
+    75%{background-color:crimson;}
+    100%{background-color:purple;}
+}
 body{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(36, 35, 35);
+    background-image: url("https://source.unsplash.com/random/auto?landscape?night");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
     overflow-y: hidden;
     overflow-x: hidden;
     flex-direction: column;
@@ -16,7 +34,12 @@ body{
 }
 .formulario{
     background-color: rgb(29, 28, 28);
-    border: 2px cyan solid;
+    border: 3px cyan solid;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     width: 30%;
     height: 60%;
     border-radius: 8%;  
@@ -33,28 +56,52 @@ body{
     background-color: rgb(29, 28, 28);
     color: cyan;
     text-align: center;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .formulario>.input::placeholder{
-    color: rgba(0, 255, 255, 0.445);
     text-align: center;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 h1{
     color: cyan;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .formulario>h2{
     color: cyan;
     text-transform: capitalize;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .formulario>.botaoEntrar{
     width: 45%;
     height: 10%;
     border-radius: 25px;
     background-color: cyan;
-    color: rgb(36, 36, 36);
+    color: white;
     font-size: 17px;
     font-weight: bolder;
     border: none;
     transition: 0.3s;
+    animation-name: fundo;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .formulario>.botaoEntrar:hover{
     width: 50%;
