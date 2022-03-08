@@ -7,15 +7,15 @@
     0%{border-color:cyan;color:cyan;}
     25%{border-color:chartreuse;color:chartreuse;}
     50%{border-color:gold;color:gold;}
-    75%{border-color:crimson;color:crimson;}
-    100%{border-color:purple;color:purple;}
+    75%{border-color:coral;color:coral;}
+    100%{border-color:fuchsia;color:fuchsia;}
 }
 @keyframes fundo{
     0%{background-color:cyan;}
     25%{background-color:chartreuse;}
     50%{background-color:gold;}
-    75%{background-color:crimson;}
-    100%{background-color:purple;}
+    75%{background-color:coral;}
+    100%{background-color:fuchsia;}
 }
 body{
     display: flex;
@@ -106,4 +106,14 @@ h1{
 .formulario>.botaoEntrar:hover{
     width: 50%;
     height: 12%;
+}
+.link_Cadastro{
+    color: cyan;
+    font-weight: bolder;
+    text-decoration: none;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
