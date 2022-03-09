@@ -130,3 +130,16 @@ h1{
 .link_Cadastro:hover{
     font-size: 18px;
 }
+
+@media(max-width:650px){
+    .formulario{
+        height: 35%;
+        width: 80%;
+    }
+}
+@media(max-width:1000px) and (min-width:650px){
+    .formulario{
+        height: 60%;
+        width: 50%;
+    }
+}
