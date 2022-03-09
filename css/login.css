@@ -17,11 +17,20 @@
     75%{background-color:coral;}
     100%{background-color:fuchsia;}
 }
+@keyframes surgir{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
+    90%{opacity:0.90;transform: scale(1.2);}
+    100%{opacity:1;transform:scale(1);}
+}
 body{
+    background-color: rgb(39, 39, 39);
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: url("https://source.unsplash.com/random/auto?landscape?night");
+    background-image: url("https://source.unsplash.com/random/auto?landscape,night");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,10 +44,10 @@ body{
 .formulario{
     background-color: rgb(29, 28, 28);
     border: 3px cyan solid;
-    animation-name: bordas;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
+    animation-name: bordas,surgir;
+    animation-duration: 10s,1.5s;
+    animation-delay: 6s,0s;
+    animation-iteration-count: infinite,1;
     animation-direction: alternate;
     width: 30%;
     height: 60%;
@@ -58,7 +67,7 @@ body{
     text-align: center;
     animation-name: bordas;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -66,7 +75,7 @@ body{
     text-align: center;
     animation-name: bordas;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -74,7 +83,7 @@ h1{
     color: cyan;
     animation-name: bordas;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -83,7 +92,7 @@ h1{
     text-transform: capitalize;
     animation-name: bordas;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -99,7 +108,7 @@ h1{
     transition: 0.3s;
     animation-name: fundo;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -113,7 +122,11 @@ h1{
     text-decoration: none;
     animation-name: bordas;
     animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    transition: 0.3s;
+}
+.link_Cadastro:hover{
+    font-size: 18px;
 }
