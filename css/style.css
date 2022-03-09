@@ -25,7 +25,10 @@
     90%{opacity:0.90;transform: scale(1.2);}
     100%{opacity:1;transform:scale(1);}
 }
-body{
+#campo_login{
+    display: none;
+}
+.container{
     background-color: rgb(39, 39, 39);
     display: flex;
     width: 100vw;
@@ -45,7 +48,7 @@ body{
     background-color: rgb(29, 28, 28);
     border: 3px cyan solid;
     animation-name: bordas,surgir;
-    animation-duration: 10s,1.5s;
+    animation-duration: 10s,1s;
     animation-delay: 6s,0s;
     animation-iteration-count: infinite,1;
     animation-direction: alternate;

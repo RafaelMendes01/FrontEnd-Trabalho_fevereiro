@@ -8,15 +8,29 @@
     <title>Pagina de login</title>
 </head>
 <body> 
+    <div id="campo_login" class="container">
     <h1>Bem Vindo de volta</h1>
     <form action="" class="formulario">
         <h2>login</h2>
+        <input type="email" placeholder="digite seu email" class="input" id="login_email" required>
+        <input type="password" placeholder="digite sua senha" class="input" id="login_senha" required>
+        <button class = "botaoEntrar">enviar</button>
+    </form>  
+    <nav>
+        <a href="#" class="link_Cadastro">realizar cadastro</a>
+    </nav>
+  </div>
+  <div id="campo_cadastro" class="container"> 
+      <h1>Bem Vindo</h1>
+    <form action="" class="formulario">
+        <h2>cadastro</h2>
+        <input type="text" placeholder="digite seu nome" class="input">
         <input type="email" placeholder="digite seu email" class="input">
         <input type="password" placeholder="digite sua senha" class="input">
         <input type="submit" placeholder="entrar" class="botaoEntrar">
     </form>  
     <nav>
-        <a href="./Cadastro.html" class="link_Cadastro">realizar cadastro</a>
-    </nav>
+        <a href="#" class="link_Cadastro">fazer login</a>
+    </nav></div>
 </body>
 </html>
