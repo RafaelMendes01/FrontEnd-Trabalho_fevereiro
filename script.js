@@ -5,8 +5,10 @@ const emailCadastro = document.querySelector("#email-cadastro")
 const nomeCadastro = document.querySelector("#nome-cadastro")
 const formLogin = document.querySelector("#form-login")
 const formCadastro = document.querySelector("#form-cadastro")
-const linkCadastro = document.querySelector(".link-cadastro")
-const linkLogin = document.querySelector(".link-login")
+const linkCadastro = document.querySelector(".link_Cadastro")
+const linkLogin = document.querySelector(".link_Login")
+const campoLogin = document.querySelector("#campo_login")
+const campoCadastro = document.querySelector("#campo_cadastro")
 let valueLoginEmail = "";
 let valueLoginSenha = "";
 let valueCadastroEmail = "";
@@ -36,14 +38,14 @@ nomeCadastro.addEventListener('change', (e) => {
 
 linkCadastro.addEventListener('click', (e) => {
   e.preventDefault();
-  formCadastro.style.display = 'flex'
-  formLogin.style.display = 'none'
+  campoCadastro.style.display = 'flex'
+  campoLogin.style.display = 'none'
 })
 
 linkLogin.addEventListener('click', (e) => {
   e.preventDefault();
-  formCadastro.style.display = 'none'
-  formLogin.style.display = 'flex'
+  campoCadastro.style.display = 'none'
+  campoLogin.style.display = 'flex'
 })
 
 formLogin.addEventListener('submit', async (e) => {

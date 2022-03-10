@@ -133,6 +133,20 @@ h1{
 .link_Cadastro:hover{
     font-size: 18px;
 }
+.link_Login{
+    color: cyan;
+    font-weight: bolder;
+    text-decoration: none;
+    animation-name: bordas;
+    animation-duration: 10s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 0.3s;
+}
+.link_Login:hover{
+    font-size: 18px;
+}
 
 @media(max-width:650px){
     .formulario{
